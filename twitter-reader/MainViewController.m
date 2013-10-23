@@ -32,7 +32,6 @@
 - (void) getInfo
 {
     
-    self.username = [NSString stringWithFormat:@"erdoganbatuhan"];
     // Request access to the Twitter accounts
     ACAccountStore *accountStore = [[ACAccountStore alloc] init];
     ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
@@ -44,7 +43,7 @@
             {
                 ACAccount *twitterAccount = [accounts objectAtIndex:0];
                 // Creating a request to get the info about a user on Twitter
-                SLRequest *twitterInfoRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:[NSURL URLWithString:@"https://api.twitter.com/1.1/users/show.json"] parameters:[NSDictionary dictionaryWithObject:self.username forKey:@"screen_name"]];
+                SLRequest *twitterInfoRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:[NSURL URLWithString:@"https://api.twitter.com/1.1/users/show.json"] parameters:[NSDictionary dictionaryWithObject:twitterAccount.username forKey:@"screen_name"]];
                 [twitterInfoRequest setAccount:twitterAccount];
                 // Making the request
                 [twitterInfoRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
@@ -81,15 +80,68 @@
                             lastTweetTextView.text= lastTweet;
 
                             
-                            NSLog(@"---%@", self.name);
-                            NSLog(@"---%@", self.username);
-                            NSLog(@"---%@", self.tweets);
-                            NSString *myString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-                            NSLog(@"%@", myString );
+
                             [self.tableView reloadData];
                         }
                     });
                 }];
+                
+                
+                
+             // Profile Page timeline json request
+                
+//                twitterInfoRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:[NSURL URLWithString:@"https://api.twitter.com/1.1/statuses/user_timeline.json"] parameters:[NSDictionary dictionaryWithObject:@"200" forKey:@"count"]];
+//                [twitterInfoRequest setAccount:twitterAccount];
+//                // Making the request
+//                [twitterInfoRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+//                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        // Check if we reached the reate limit
+//                        if ([urlResponse statusCode] == 429) {
+//                            NSLog(@"Rate limit reached");
+//                            return;
+//                        }
+//                        // Check if there was an error
+//                        if (error) {
+//                            NSLog(@"Error: %@", error.localizedDescription);
+//                            return;
+//                        }
+//                        // Check if there is some response data
+//                        if (responseData) {
+//                            NSString *myString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+//                            NSLog(@"%@", myString );
+//                        }
+//                    });
+//                }];
+                
+                
+                // Home timeline json request
+                
+//                twitterInfoRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:[NSURL URLWithString:@"https://api.twitter.com/1.1/statuses/home_timeline.json"] parameters:[NSDictionary dictionaryWithObject:@"200" forKey:@"count"]];
+//                [twitterInfoRequest setAccount:twitterAccount];
+//                // Making the request
+//                [twitterInfoRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+//                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        // Check if we reached the reate limit
+//                        if ([urlResponse statusCode] == 429) {
+//                            NSLog(@"Rate limit reached");
+//                            return;
+//                        }
+//                        // Check if there was an error
+//                        if (error) {
+//                            NSLog(@"Error: %@", error.localizedDescription);
+//                            return;
+//                        }
+//                        // Check if there is some response data
+//                        if (responseData) {
+//                            NSString *myString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+//                            NSLog(@"%@", myString );
+//                        }
+//                    });
+//                }];
+                
+
+                
+                
             }
         } else {
             NSLog(@"No access granted");
