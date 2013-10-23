@@ -14,13 +14,19 @@
 		0400A89F1817AA8C00BB010A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400A89E1817AA8C00BB010A /* main.m */; };
 		0400A8A31817AA8C00BB010A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400A8A21817AA8C00BB010A /* AppDelegate.m */; };
 		0400A8A61817AA8C00BB010A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0400A8A41817AA8C00BB010A /* Main.storyboard */; };
-		0400A8A91817AA8C00BB010A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400A8A81817AA8C00BB010A /* ViewController.m */; };
 		0400A8AB1817AA8C00BB010A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0400A8AA1817AA8C00BB010A /* Images.xcassets */; };
 		0400A8B21817AA8C00BB010A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400A8B11817AA8C00BB010A /* XCTest.framework */; };
 		0400A8B31817AA8C00BB010A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400A8921817AA8C00BB010A /* Foundation.framework */; };
 		0400A8B41817AA8C00BB010A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400A8961817AA8C00BB010A /* UIKit.framework */; };
 		0400A8BC1817AA8C00BB010A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0400A8BA1817AA8C00BB010A /* InfoPlist.strings */; };
 		0400A8BE1817AA8C00BB010A /* twitter_readerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400A8BD1817AA8C00BB010A /* twitter_readerTests.m */; };
+		0400A8CA1817BF0300BB010A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400A8C91817BF0300BB010A /* Social.framework */; };
+		0400A8CC1817BF6000BB010A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400A8CB1817BF6000BB010A /* QuartzCore.framework */; };
+		0400A8CE1817BF6500BB010A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400A8CD1817BF6500BB010A /* Accounts.framework */; };
+		0400A8D11817C07100BB010A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400A8D01817C07100BB010A /* MainViewController.m */; };
+		0400A8D41817CE9200BB010A /* ProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400A8D31817CE9200BB010A /* ProfileCell.m */; };
+		0400A8D71817CEA000BB010A /* InfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400A8D61817CEA000BB010A /* InfoCell.m */; };
+		0400A8DA1817CEAA00BB010A /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400A8D91817CEAA00BB010A /* TweetCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +51,24 @@
 		0400A8A11817AA8C00BB010A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0400A8A21817AA8C00BB010A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0400A8A51817AA8C00BB010A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0400A8A71817AA8C00BB010A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0400A8A81817AA8C00BB010A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0400A8AA1817AA8C00BB010A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0400A8B01817AA8C00BB010A /* twitter-readerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "twitter-readerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0400A8B11817AA8C00BB010A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0400A8B91817AA8C00BB010A /* twitter-readerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twitter-readerTests-Info.plist"; sourceTree = "<group>"; };
 		0400A8BB1817AA8C00BB010A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0400A8BD1817AA8C00BB010A /* twitter_readerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twitter_readerTests.m; sourceTree = "<group>"; };
+		0400A8C71817ACC000BB010A /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		0400A8C91817BF0300BB010A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		0400A8CB1817BF6000BB010A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0400A8CD1817BF6500BB010A /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		0400A8CF1817C07100BB010A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0400A8D01817C07100BB010A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0400A8D21817CE9200BB010A /* ProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileCell.h; sourceTree = "<group>"; };
+		0400A8D31817CE9200BB010A /* ProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileCell.m; sourceTree = "<group>"; };
+		0400A8D51817CEA000BB010A /* InfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCell.h; sourceTree = "<group>"; };
+		0400A8D61817CEA000BB010A /* InfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCell.m; sourceTree = "<group>"; };
+		0400A8D81817CEAA00BB010A /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
+		0400A8D91817CEAA00BB010A /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0400A8CE1817BF6500BB010A /* Accounts.framework in Frameworks */,
+				0400A8CC1817BF6000BB010A /* QuartzCore.framework in Frameworks */,
+				0400A8CA1817BF0300BB010A /* Social.framework in Frameworks */,
 				0400A8951817AA8C00BB010A /* CoreGraphics.framework in Frameworks */,
 				0400A8971817AA8C00BB010A /* UIKit.framework in Frameworks */,
 				0400A8931817AA8C00BB010A /* Foundation.framework in Frameworks */,
@@ -101,6 +120,10 @@
 		0400A8911817AA8C00BB010A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0400A8CD1817BF6500BB010A /* Accounts.framework */,
+				0400A8CB1817BF6000BB010A /* QuartzCore.framework */,
+				0400A8C91817BF0300BB010A /* Social.framework */,
+				0400A8C71817ACC000BB010A /* Twitter.framework */,
 				0400A8921817AA8C00BB010A /* Foundation.framework */,
 				0400A8941817AA8C00BB010A /* CoreGraphics.framework */,
 				0400A8961817AA8C00BB010A /* UIKit.framework */,
@@ -115,10 +138,16 @@
 				0400A8A11817AA8C00BB010A /* AppDelegate.h */,
 				0400A8A21817AA8C00BB010A /* AppDelegate.m */,
 				0400A8A41817AA8C00BB010A /* Main.storyboard */,
-				0400A8A71817AA8C00BB010A /* ViewController.h */,
-				0400A8A81817AA8C00BB010A /* ViewController.m */,
+				0400A8CF1817C07100BB010A /* MainViewController.h */,
+				0400A8D01817C07100BB010A /* MainViewController.m */,
 				0400A8AA1817AA8C00BB010A /* Images.xcassets */,
 				0400A8991817AA8C00BB010A /* Supporting Files */,
+				0400A8D21817CE9200BB010A /* ProfileCell.h */,
+				0400A8D31817CE9200BB010A /* ProfileCell.m */,
+				0400A8D51817CEA000BB010A /* InfoCell.h */,
+				0400A8D61817CEA000BB010A /* InfoCell.m */,
+				0400A8D81817CEAA00BB010A /* TweetCell.h */,
+				0400A8D91817CEAA00BB010A /* TweetCell.m */,
 			);
 			path = "twitter-reader";
 			sourceTree = "<group>";
@@ -249,8 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0400A8A91817AA8C00BB010A /* ViewController.m in Sources */,
 				0400A8A31817AA8C00BB010A /* AppDelegate.m in Sources */,
+				0400A8D41817CE9200BB010A /* ProfileCell.m in Sources */,
+				0400A8D11817C07100BB010A /* MainViewController.m in Sources */,
+				0400A8DA1817CEAA00BB010A /* TweetCell.m in Sources */,
+				0400A8D71817CEA000BB010A /* InfoCell.m in Sources */,
 				0400A89F1817AA8C00BB010A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TweetCell.h
 //  twitter-reader
 //
 //  Created by Batuhan Erdogan on 23.10.2013.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TweetCell : UITableViewCell
 
 @end
